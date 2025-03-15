@@ -27,3 +27,12 @@ optimizer :-learn adam optimizer
 input:- we  have to provide 28*28=784 input  to 128 neurons  of hidden layer which uses relu as activation fucntion 
 then 10 neuron output which will give the 10 diffent probablity  on applying softmax it will give highest  prob  which is out digit
 y=x*w+b-> A=relu(y)-> y'=w*a+b-> B=softmax(y')->loss=B and actual output ,after loss we have to optimised our weight and bias by gradient descent algorithm 
+ batch normalization :- means normalizing the input at every layer :-
+ calculate means (u) and standard deviation (s):-
+z11(N):-(z11-u)/s,z11(BN)=Y(z11(N))+B, gaama and beta are parameter 
+ it reduce overfitting and helps in speed up training 
+ Dropout is a regularization technique that helps prevent overfitting in neural networks.
+🔹 Dropout(0.1) means 10% of the neurons in this layer will be randomly deactivated (set to 0) during each training step.
+ loss binary cross entropy:-
+Loss=-ylog(y^)-(1-y)log(1-y^)
+
